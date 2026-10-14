@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "ascend": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

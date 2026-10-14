@@ -1,0 +1,66 @@
+{
+  "type": "origins:multiple",
+  "name": "One with the gods",
+  "description": "Through everything you've went through, you have become a god yourself, and all the other gods can do, is watch.",
+  "init": {
+    "type": "origins:action_on_callback",
+    "hidden": true,
+    "entity_action_added": {
+      "type": "origins:execute_command",
+      "command": "scoreboard objectives add finoison_trinity dummy",
+      "permission_level": 4
+    },
+    "entity_action_gained": {
+      "type": "origins:execute_command",
+      "command": "scoreboard objectives add finoison_trinity dummy",
+      "permission_level": 4
+    },
+    "entity_action_respawned": {
+      "type": "origins:execute_command",
+      "command": "scoreboard objectives add finoison_trinity dummy",
+      "permission_level": 4
+    }
+  },
+  "hearts": {
+    "type": "origins:conditioned_attribute",
+    "hidden": true,
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": 20,
+      "name": "One with the gods hearts"
+    },
+    "update_health": false,
+    "tick_rate": 2,
+    "condition": {
+      "type": "origins:command",
+      "command": "execute if score @s finoison_trinity matches 1",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "smash": {
+    "type": "origins:action_on_block_break",
+    "hidden": true,
+    "only_when_harvested": false,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:command",
+          "command": "execute if score @s finoison_trinity matches 1",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:sneaking"
+        }
+      ]
+    },
+    "block_action": {
+      "type": "origins:execute_command",
+      "command": "function finoison:wither_smash",
+      "permission_level": 4
+    }
+  }
+}

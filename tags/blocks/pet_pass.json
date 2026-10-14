@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:void_air",
+    "minecraft:water",
+    {"id": "minecraft:grass", "required": false},
+    {"id": "minecraft:short_grass", "required": false},
+    {"id": "minecraft:tall_grass", "required": false},
+    {"id": "minecraft:fern", "required": false},
+    {"id": "minecraft:large_fern", "required": false},
+    {"id": "minecraft:snow", "required": false},
+    {"id": "minecraft:vine", "required": false},
+    {"id": "minecraft:dead_bush", "required": false},
+    {"id": "#minecraft:flowers", "required": false},
+    {"id": "#minecraft:saplings", "required": false}
+  ]
+}

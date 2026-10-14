@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "origins": [
+    "finoison:finoison",
+    "finoison:finoison_evolved",
+    "finoison:finoison_sovereign"
+  ]
+}

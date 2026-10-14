@@ -1,0 +1,23 @@
+{
+  "type": "origins:active_self",
+  "name": "Dragon's Bridge",
+  "description": "Press the load-toolbar key (default X) while sneaking: the Dragon lays a 3-wide purpur bridge 20 blocks ahead of you at your feet level, over air only.",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "function finoison:dragon_bridge_start",
+    "permission_level": 4
+  },
+  "cooldown": 100,
+  "condition": {
+    "type": "origins:sneaking",
+    "inverted": false
+  },
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+    "bar_index": 2
+  },
+  "key": {
+    "key": "key.loadToolbarActivator"
+  }
+}

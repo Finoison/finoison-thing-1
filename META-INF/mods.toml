@@ -1,0 +1,23 @@
+modLoader="lowcodefml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="finoison"
+version="1.0.0"
+displayName="Finoison Origin"
+description='''Adds the Finoison origin.'''
+
+[[dependencies.finoison]]
+modId="origins"
+mandatory=true
+versionRange="[1.10,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.finoison]]
+modId="pehkui"
+mandatory=true
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"

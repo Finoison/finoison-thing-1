@@ -1,0 +1,9 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": { "entity": { "type": "minecraft:warden" } }
+    }
+  },
+  "rewards": { "function": "finoison:boss_kill_warden" }
+}

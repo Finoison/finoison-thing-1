@@ -1,0 +1,23 @@
+{
+  "type": "origins:active_self",
+  "name": "Dragon's Drill",
+  "description": "Press the load-toolbar key (default X) while standing: the Dragon bores a 3x3 tunnel 16 blocks in the direction you are looking, mining stone, ore and dirt (never bedrock) and sending every drop straight to you. Mind the lava.",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "function finoison:dragon_drill_start",
+    "permission_level": 4
+  },
+  "cooldown": 200,
+  "condition": {
+    "type": "origins:sneaking",
+    "inverted": true
+  },
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+    "bar_index": 1
+  },
+  "key": {
+    "key": "key.loadToolbarActivator"
+  }
+}
